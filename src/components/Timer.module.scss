@@ -1,0 +1,284 @@
+@import "../styles/colors.scss";
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  user-select: none;
+
+  .stage {
+    transition-property: color, background-color;
+    transition-duration: 2s;
+  }
+
+  .countdown {
+    transition-property: color, background-color;
+    transition-duration: 2s;
+  }
+
+  .btn-small {
+    transition-property: color, background-color;
+    transition-duration: 2s;
+  }
+  .btn-big {
+    transition-property: color, background-color;
+    transition-duration: 2s;
+  }
+}
+
+.stage {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 16px;
+  border-radius: 25px;
+}
+
+.countdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 256px;
+  line-height: 217px;
+
+  @media (max-width: 500px) {
+    font-size: 200px;
+    line-height: 150px;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+  }
+}
+
+.btn-small {
+  width: 80px;
+  height: 80px;
+  border-radius: 24px;
+  @media (max-width: 500px) {
+    width: 60px;
+    height: 60px;
+  }
+}
+.btn-big {
+  width: 128px;
+  height: 96px;
+  border-radius: 32px;
+  @media (max-width: 500px) {
+    width: 100px;
+    height: 88px;
+  }
+}
+
+.focus {
+  .stage {
+    border: 1px solid $red-5;
+    background-color: $red-2;
+    span {
+      color: $red-5;
+    }
+  }
+
+  .icon {
+    path {
+      fill: $red-5;
+      transition: all 2s;
+    }
+  }
+
+  .countdown {
+    color: $red-5;
+  }
+
+  .btn-small {
+    background-color: $red-2;
+  }
+  .btn-big {
+    background-color: $red-3;
+  }
+  .btn-icon {
+    path {
+      fill: $red-5;
+      transition: all 2s;
+    }
+  }
+}
+.shortBreak {
+  .stage {
+    border: 1px solid $green-4;
+    background-color: $green-2;
+    span {
+      color: $green-4;
+    }
+  }
+
+  .icon {
+    path {
+      fill: $green-4;
+      transition: all 2s;
+    }
+  }
+
+  .countdown {
+    color: $green-4;
+  }
+
+  .btn-small {
+    background-color: $green-2;
+  }
+  .btn-big {
+    background-color: $green-3;
+  }
+  .btn-icon {
+    path {
+      fill: $green-4;
+      transition: all 2s;
+    }
+  }
+}
+
+.longBreak {
+  .stage {
+    border: 1px solid $blue-4;
+    background-color: $blue-2;
+    span {
+      color: $blue-4;
+    }
+  }
+
+  .icon {
+    path {
+      fill: $blue-4;
+    }
+  }
+
+  .countdown {
+    color: $blue-4;
+  }
+
+  .btn-small {
+    background-color: $blue-2;
+  }
+  .btn-big {
+    background-color: $blue-3;
+  }
+  .btn-icon {
+    path {
+      fill: $blue-4;
+      transition: all 2s;
+    }
+  }
+}
+.focusDark {
+  .stage {
+    border: 1px solid $red-8;
+    background-color: $red-6;
+    span {
+      color: $red-8;
+    }
+  }
+
+  .icon {
+    path {
+      fill: $red-8;
+      transition: all 2s;
+    }
+  }
+
+  .countdown {
+    color: $red-8;
+  }
+
+  .btn-small {
+    background-color: $red-7;
+  }
+  .btn-big {
+    background-color: $red-9;
+  }
+
+  .btn-icon {
+    path {
+      fill: $red-8;
+    }
+  }
+}
+
+.shortBreakDark {
+  .stage {
+    border: 1px solid $green-8;
+    background-color: $green-6;
+    span {
+      color: $green-8;
+    }
+  }
+
+  .icon {
+    path {
+      fill: $green-8;
+      transition: all 2s;
+    }
+  }
+
+  .countdown {
+    color: $green-8;
+  }
+
+  .btn-small {
+    background-color: $green-7;
+  }
+  .btn-big {
+    background-color: $green-9;
+  }
+
+  .btn-icon {
+    path {
+      fill: $green-8;
+    }
+  }
+}
+
+.longBreakDark {
+  .stage {
+    border: 1px solid $blue-8;
+    background-color: $blue-6;
+    span {
+      color: $blue-8;
+    }
+  }
+
+  .icon {
+    path {
+      fill: $blue-8;
+      transition: all 2s;
+    }
+  }
+
+  .countdown {
+    color: $blue-8;
+  }
+
+  .btn-small {
+    background-color: $blue-7;
+  }
+  .btn-big {
+    background-color: $blue-7;
+  }
+
+  .btn-icon {
+    path {
+      fill: $blue-9;
+    }
+  }
+}

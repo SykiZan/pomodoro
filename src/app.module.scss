@@ -1,0 +1,34 @@
+@import "./styles/colors.scss";
+.page {
+  height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.focus {
+  background-color: $red-1;
+  transition-property: background-color;
+  transition-duration: 2s;
+}
+.shortBreak {
+  background-color: $green-1;
+  transition-property: background-color;
+  transition-duration: 2s;
+}
+.longBreak {
+  background-color: $blue-1;
+  transition-property: background-color;
+  transition-duration: 2s;
+}
+
+.focusDark {
+  background-color: $red-6;
+}
+.shortBreakDark {
+  background-color: $green-5;
+}
+.longBreakDark {
+  background-color: $blue-4;
+}
