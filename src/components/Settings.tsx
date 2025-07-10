@@ -10,7 +10,7 @@ const Settings = (props: any) => {
   // const [focusTime, setFocusTime] = useState(25);
   // const [shortBreakTime, setShortBreakTime] = useState(5);
   // const [longBreakTime, setLongBreakTime] = useState(10);
-// aasd
+// aasdsd
   const handleDarkMode = () => {
     props.handleTheme();
     // setIsDarkMode((prev) => !prev);
